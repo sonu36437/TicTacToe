@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.boxes {
+  height: 80px;
+  width: 80px;
+  border: 2px solid rgb(21, 20, 20);
+  padding: 10px;
+  font-size: 40px;
+  font-weight: bolder;
+  border-radius: 2px;
+}
+
+.contboxes {
+  display: grid;
+  font-family: "Permanent Marker", cursive;
+
+  grid-template-columns: 80px 80px 80px;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(195, 253, 226);
+}
+
+.boxes:nth-child(1),
+.boxes:nth-child(7),
+.boxes:nth-child(4) {
+  /* border-top: none; */
+  border-left: none;
+}
+
+.boxes:nth-child(1),
+.boxes:nth-child(2),
+.boxes:nth-child(3) {
+  border-top: none;
+}
+
+.boxes:nth-child(3),
+.boxes:nth-child(6),
+.boxes:nth-child(9) {
+  border-right: none;
+}
+
+.boxes:nth-child(7),
+.boxes:nth-child(8),
+.boxes:nth-child(9) {
+  border-bottom: none;
+}
+
+.player {
+  font-size: 56px;
+  text-align: center;
+  font-weight: bolder;
+  color: rgb(34, 73, 78);
+}
+
+.resetbtn {
+  text-align: center;
+}
+
+.btn {
+  height: 70px;
+  width: 200px;
+  border: none;
+  border-radius: 40px;
+  background-color: black;
+  color: rgb(194, 253, 201);
+  font-size: 40px;
+  font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+  .player {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    text-align: center;
+  }
+}
