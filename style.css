@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background-color:'red';
+  background-color:'ywllow';
 }
 
 .boxes {
@@ -29,7 +29,7 @@ body {
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: rgb(195, 253, 226);
+  /* background-color: rgb(195, 253, 226); */
 }
 
 .boxes:nth-child(1),
